@@ -1,7 +1,5 @@
 # Challenge-III
-UOLkut
-
-# Challenge-III
+- UOLkut
 - Intern name: Gabriel Bocaletti Morato
 - Third challenge for interns of REACT - AWS Cloud Context | Compass UOL - IFSP e UniNassau [05/06/2023]
 

@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <Navbar page='logged-out' />
+    <Navbar page='logged-in' />
   );
 }
 

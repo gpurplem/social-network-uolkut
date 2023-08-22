@@ -1,0 +1,17 @@
+.card-outer {
+    background: #FDFEFF;
+    width: 384px;
+    height: 600px;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

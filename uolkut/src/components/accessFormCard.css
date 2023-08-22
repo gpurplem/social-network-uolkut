@@ -1,0 +1,124 @@
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header__icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    display: flex;
+}
+
+.card-header__text {
+    color: #ED6D25;
+    font-family: SF Pro Display;
+    font-size: var(--font-large);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align-last: center;
+    padding: 16px 0px;
+    display: flex;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.card-body__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+input:not([type="checkbox"]),
+button {
+    margin: 12px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+.card-body__email,
+.card-body__password {
+    background-color: #EFF3F8;
+    border-radius: 8px;
+}
+
+.card-body__email::placeholder,
+.card-body__password::placeholder {
+    padding-left: 16px;
+}
+
+.card-body__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.card-body__label {
+    padding-left: 12px;
+    color: #868686;
+    font-family: Roboto Flex;
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border-radius: 4px;
+    background: #EFF3F8;
+}
+
+.card-body__checkbox:checked {
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 4px;
+    border: 2px solid #EFF3F8;
+    background: #ED6D25;
+}
+
+.card-body__login-button {
+    border-radius: 8px;
+    background: #ED6D25;
+    color: #EFF3F8;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-body__signup-button {
+    border-radius: 8px;
+    background: #EFF3F8;
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-body__link {
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-smallest);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    align-self: center;
+    padding: 16px 0px;
+}

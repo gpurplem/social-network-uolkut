@@ -92,6 +92,16 @@
     border-radius: 50%;
 }
 
+.navbar__link--active {
+    color: #ED6D25;;
+}
+
+.navbar__search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 @media screen and (max-width: 1279px) {
     .navbar-text-loggedout {
         display: none;
@@ -100,93 +110,20 @@
     .navbar-content-loggedout {
         justify-content: center;
     }
-}
 
+    .navbar__link {
+        display: none;
+    }
 
+    .navbar__user-name {
+        display: none;
+    }
+    
+    .navbar__search-bar-wrapper {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-.profile-link {
-    color: #ED6D25;;
-}
-
-
-
-.search-bar-mobile-wrapper {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    width: 320px;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #eff3f8;
-    margin-top: 30px;
-}
-
-.search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-
-.mobile-only {
-    display: none;
-}
-
-/* @media (max-width: 768px) {
-    .navbar-content {
-        flex-direction: row;
+    .navbar-content-loggedin {
         justify-content: space-between;
     }
-
-    .nav-group-left,
-    .nav-group-right {
-        display: flex;
-        align-items: center;
-        width: 50%;
-    }
-
-    .nav-group-left {
-        justify-content: flex-start;
-    }
-
-    .nav-group-right {
-        justify-content: flex-end;
-    }
-
-    .img-nav {
-        width: 80px;
-        height: 24px;
-    }
-
-    .user-profile img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .search-bar-desktop-wrapper {
-        display: none;
-    }
-
-    .search-bar-mobile-wrapper {
-        display: flex;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-    .desktop-only {
-        display: none;
-    }
-
-    .mobile-only {
-        display: block;
-    }
-} */
+}

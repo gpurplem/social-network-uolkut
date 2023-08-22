@@ -9,8 +9,11 @@ interface propsInterface {
 
 const Navbar: React.FC<propsInterface> = (props) => {
     let content;
+    let navbarContentClass = 'navbar-content ';
 
     if (props.page === 'logged-out') {
+        navbarContentClass += 'navbar-content-loggedout';
+
         content = (
             <>
                 <div className="navbar-group__left">
@@ -22,18 +25,20 @@ const Navbar: React.FC<propsInterface> = (props) => {
             </>
         );
     } else if (props.page === 'logged-in') {
+        navbarContentClass += 'navbar-content-loggedin';
+
         content = (
             <>
                 <div className="navbar-group__left">
                     <img className='navbar-image' src={mainLogo} alt="Logo for UOLkut" />
                     <span className="navbar__link">Início</span>
-                    <span className="navbar__link profile-link">Perfil</span>
+                    <span className="navbar__link navbar__link--active">Perfil</span>
                     <span className="navbar__link">Comunidades</span>
                     <span className="navbar__link">Jogos</span>
                 </div>
                 <div className="navbar-group__right">
                     <div className="navbar__search-bar-wrapper">
-                        <img src={searchIcon} alt="Pesquisar" className="search-icon" />
+                        <img src={searchIcon} alt="Pesquisar" className="navbar__search-icon" />
                         <input type="search" placeholder="Pesquisar no UOLkut" className="navbar__search-bar-content" />
                     </div>
                     <div className="navbar__user-profile">
@@ -48,7 +53,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
 
     return (
         <nav className="navbar">
-            <div className='navbar-content navbar-content-loggedout'>
+            <div className={navbarContentClass}>
                 {content}
             </div>
         </nav>

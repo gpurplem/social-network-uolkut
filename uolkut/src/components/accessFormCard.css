@@ -1,0 +1,253 @@
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header__icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    display: flex;
+}
+
+.card-header__text {
+    color: #ED6D25;
+    font-family: SF Pro Display;
+    font-size: var(--font-large);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align-last: center;
+    padding: 16px 0px;
+    display: flex;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.card-body__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body__email,
+.card-body__password,
+.card-body__date,
+.card-body__occupation,
+.card-body__country,
+.card-body__city {
+    background-color: #EFF3F8;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+input::placeholder {
+    padding-left: 16px;
+    color: #868686;
+    font-family: Roboto Flex;
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-body__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.card-body__label {
+    padding-left: 12px;
+    color: #868686;
+    font-family: Roboto Flex;
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+.card-body__checkbox {
+    display: flex;
+    height: 13px;
+    width: 13px;
+    border-radius: 4px;
+    background: #EFF3F8;
+}
+
+.card-body__checkbox:checked {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 4px;
+    border: 2px solid #EFF3F8;
+    background: #ED6D25;
+}
+
+.card-body__login-button {
+    border-radius: 8px;
+    background: #ED6D25;
+    color: #EFF3F8;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+.card-body__signup-button {
+    border-radius: 8px;
+    background: #EFF3F8;
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+.card-body__link {
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-smallest);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    align-self: center;
+    padding: 16px 0px;
+}
+
+.card-body__sigin-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body__sigin-wrapper-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-body__date {
+    display: flex;
+    width: 40%;
+}
+
+.card-body__date-text {
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-smallest);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.card-body__occupation {
+    width: 50%;
+    display: flex;
+}
+
+.card-body__country {
+    width: 40%;
+    display: flex;
+}
+
+.card-body__city {
+    width: 50%;
+    display: flex;
+}
+
+.card-body__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #EFF3F8;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 10px 12px;
+    border: none;
+    width: 45%;
+    align-self: self-end;
+    color: #868686 !important;
+    font-family: Roboto Flex;
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-image: url('../assets/select-arrowdown.svg');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 15px 15px;
+    color: #333;
+}
+
+.card-body__select option:first-child {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.card-body__send-code-button {
+    border-radius: 8px;
+    background: #ED6D25;
+    color: #EFF3F8;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px 0 60px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+.card-body__return-login-button {
+    border-radius: 8px;
+    background: #EFF3F8;
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12px 0;
+    padding: 16px 0;
+    border: none;
+}
+
+.card-body__remember-link {
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    padding: 60px 0 16px 0;
+    text-decoration: none;
+}

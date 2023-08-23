@@ -17,7 +17,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
         content = (
             <>
                 <div className="navbar-group__left">
-                    <img className='navbar-image' src={mainLogo} alt="Logo UOLkut" />
+                    <img className='navbar-logo' src={mainLogo} alt="Logo UOLkut" />
                 </div>
                 <div className="navbar-group__right">
                     <span className='navbar-text navbar-text-loggedout'>Centro de segurança</span>

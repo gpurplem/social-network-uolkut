@@ -45,8 +45,8 @@
 .card-body__city {
     background-color: #EFF3F8;
     border-radius: 8px;
-    margin: 12px 0;
-    padding: 16px 0;
+    margin: 4px 0;
+    padding: 16px 20px;
     border: none;
 }
 
@@ -58,6 +58,14 @@ input::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type='checkbox']:hover {
+    cursor: pointer;
 }
 
 .card-body__checkbox-wrapper {
@@ -162,8 +170,7 @@ input::placeholder {
     line-height: normal;
     letter-spacing: 1px;
     position: relative;
-    bottom: 10px;
-
+    bottom: 4px;
 }
 
 .card-body__occupation {
@@ -240,10 +247,10 @@ input::placeholder {
     border: none;
 }
 
-.card-body__remember-link {
+.card-body__remember-subtitle {
     color: #ED6D25;
     font-family: Roboto Flex;
-    font-size: 18px;
+    font-size: var(--font-medium);
     font-style: normal;
     font-weight: 400;
     line-height: normal;

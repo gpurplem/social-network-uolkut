@@ -30,7 +30,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
         content = (
             <>
                 <div className="navbar-group__left">
-                    <img className='navbar-image' src={mainLogo} alt="Logo for UOLkut" />
+                    <img className='navbar-logo' src={mainLogo} alt="Logo for UOLkut" />
                     <span className="navbar__link">Início</span>
                     <span className="navbar__link navbar__link--active">Perfil</span>
                     <span className="navbar__link">Comunidades</span>

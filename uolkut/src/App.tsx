@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import Navbar from './components/navbar';
 import AccessFormCard from './components/accessFormCard';
 import Footer from './components/footer';
@@ -8,6 +9,8 @@ import Image from './assets/access-page-image.png';
 
 
 function App() {
+  const [page, setPage] = useState('login');
+
   return (
     <>
       <Navbar page='logged-out' />
@@ -18,7 +21,9 @@ function App() {
           <p className='access-page__image-text'>Conecte-se aos seus amigos e familiares<br />usando recados e mensagens instantâneas</p>
         </div>
 
-        <AccessFormCard form='login' />
+        {page === 'login' && <AccessFormCard form='login' setPage={setPage} />}
+        {page === 'signup' && <AccessFormCard form='signup' setPage={setPage} />}
+        {page === 'forgot-password' && <AccessFormCard form='forgot-password' setPage={setPage} />}
       </div>
 
       <Footer />

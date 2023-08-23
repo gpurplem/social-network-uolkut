@@ -4,12 +4,28 @@ import './accessFormCard.css'
 
 interface propsInterface {
     form: string;
+    setPage: (newValue: string) => void;
 }
 
 const AccessFormCard: React.FC<propsInterface> = (props) => {
     let headerText;
     let content;
     let emailPlaceholder = "E-mail";
+
+    function drawSignupPage(event: React.FormEvent) {
+        event.preventDefault();
+        props.setPage('signup');
+    }
+
+    function drawForgotPage(event: React.FormEvent) {
+        event.preventDefault();
+        props.setPage('forgot-password');
+    }
+
+    function drawLoginPage(event: React.FormEvent) {
+        event.preventDefault();
+        props.setPage('login');
+    }
 
     if (props.form === 'login') {
         headerText = 'Accesse o UOLkut';
@@ -25,9 +41,9 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
 
                 <button type="submit" className="card-body__login-button">Entrar</button>
 
-                <button type="button" className="card-body__signup-button">Criar conta</button>
+                <button type="button" className="card-body__signup-button" onClick={drawSignupPage}>Criar conta</button>
 
-                <a href="." className="card-body__link">Esqueci a minha senha</a>
+                <a href="." className="card-body__link" onClick={drawForgotPage}>Esqueci a minha senha</a>
             </>
         );
     } else if (props.form === 'signup') {
@@ -71,15 +87,14 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
 
         content = (
             <>
-                <button type="submit" className="card-body__send-code-button">Enviar código</button>
+                <button type="submit" className="card-body__send-code-button" onClick={drawLoginPage}>Enviar código</button>
 
-                <a href="." className="card-body__remember-link">Lembrou sua Senha?</a>
+                <p className="card-body__remember-subtitle">Lembrou sua Senha?</p>
 
-                <button type="button" className="card-body__return-login-button">Entrar com as credenciais</button>
+                <button type="button" className="card-body__return-login-button" onClick={drawLoginPage}>Entrar com as credenciais</button>
             </>
         );
     }
-
 
     return (
         <Card>

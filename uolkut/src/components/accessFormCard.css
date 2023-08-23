@@ -247,7 +247,7 @@ input[type='checkbox']:hover {
     border: none;
 }
 
-.card-body__remember-link {
+.card-body__remember-subtitle {
     color: #ED6D25;
     font-family: Roboto Flex;
     font-size: var(--font-medium);

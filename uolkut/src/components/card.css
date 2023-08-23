@@ -1,7 +1,7 @@
 .card-outer {
     background: #FDFEFF;
-    width: 384px;
-    height: 600px;
+    width: 284px;
+    height: 30em;
     display: flex;
     border-radius: 16px;
     flex-direction: column;

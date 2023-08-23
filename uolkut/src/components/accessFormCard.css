@@ -60,6 +60,14 @@ input::placeholder {
     line-height: normal;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+input[type='checkbox']:hover {
+    cursor: pointer;
+}
+
 .card-body__checkbox-wrapper {
     display: flex;
     align-items: center;

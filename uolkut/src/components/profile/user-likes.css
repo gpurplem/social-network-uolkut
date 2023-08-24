@@ -1,3 +1,17 @@
+.user-likes__wrapper {
+    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.user-likes-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
 .user-likes__label {
     color: #B4AEAE;
     font-family: Roboto Flex;

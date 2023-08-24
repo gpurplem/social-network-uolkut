@@ -12,7 +12,6 @@
 .edit-profile-button__card-outer {
     background: #FDFEFF;
     width: 100%;
-    max-width: 300px;
     display: flex;
     border-radius: 16px;
     flex-direction: column;

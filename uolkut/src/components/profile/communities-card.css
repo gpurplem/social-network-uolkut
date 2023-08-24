@@ -1,7 +1,6 @@
 .communities-card__card-outer {
     background: #FDFEFF;
     width: 100%;
-    max-width: 300px;
     display: flex;
     border-radius: 16px;
     flex-direction: column;
@@ -15,14 +14,33 @@
     height: 100%;
 }
 
-.card-header {
+.communities-card__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-around;
 }
 
-.card-body-communities {
+.communities-card__header span:first-child {
+    color: #4B4B4B;
+    font-family: SF Pro Display;
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.communities-card__header span:last-child {
+    cursor: pointer;
+    color: #ED6D25;
+    font-family: SF Pro Display;
+    font-size: var(--font-smallest);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.communities-card__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -49,16 +67,17 @@
 .communities-thumb-container span {
     color: #4B4B4B;
     font-family: SF Pro Display;
-    font-size: 14px;
+    font-size: var(--font-smallest);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align-last: center;
 }
 
-.community-tumb {
+.community-thumb {
     height: 56px;
     width: 56px;
     object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
 }

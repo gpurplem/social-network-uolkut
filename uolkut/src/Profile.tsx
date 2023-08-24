@@ -11,11 +11,21 @@ const Layout: React.FC = () => {
   return (
     <>
       <Navbar page='logged-in' />
-      <UserInfo />
-      <ProfileCard />
-      <EditProfileButton />
-      <Friends />
-      <Communities />
+      <div className='profile-wrapper'>
+        <div className='profile-content'>
+          <div className='profile-left-section'>
+            <ProfileCard />
+            <EditProfileButton />
+          </div>
+          <div className='profile-center-section'>
+            <UserInfo />
+          </div>
+          <div className='profile-right-section'>
+            <Friends />
+            <Communities />
+          </div>
+        </div>
+      </div>
     </>
   )
 };

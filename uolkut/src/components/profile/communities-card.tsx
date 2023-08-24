@@ -13,50 +13,50 @@ const Communities: React.FC = () => {
     return (
         <div className='communities-card__card-outer'>
             <div className='communities-card__card-inner'>
-                <header className="card-header">
+                <header className="communities-card__header">
                     <span>Comunidade (42)</span>
                     <span>Ver todos</span>
                 </header>
-                <section className="card-body-communities">
+                <section className="communities-card__body">
                     <div className="communities-row">
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo1} alt="Community" />
+                            <img className="community-thumb" src={photo1} alt="Community" />
                             <span>Carros</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo2} alt="Community" />
+                            <img className="community-thumb" src={photo2} alt="Community" />
                             <span>Desenhos</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo3} alt="Community" />
+                            <img className="community-thumb" src={photo3} alt="Community" />
                             <span>Crazy</span>
                         </div>
                     </div>
                     <div className="communities-row">
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo4} alt="Community" />
+                            <img className="community-thumb" src={photo4} alt="Community" />
                             <span>Fofos</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo5} alt="Community" />
+                            <img className="community-thumb" src={photo5} alt="Community" />
                             <span>Animes</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo6} alt="Community" />
+                            <img className="community-thumb" src={photo6} alt="Community" />
                             <span>Leitura</span>
                         </div>
                     </div>
                     <div className="communities-row">
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo7} alt="Community" />
+                            <img className="community-thumb" src={photo7} alt="Community" />
                             <span>Meu ovo</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo8} alt="Community" />
+                            <img className="community-thumb" src={photo8} alt="Community" />
                             <span>My books</span>
                         </div>
                         <div className="communities-thumb-container">
-                            <img className="community-tumb" src={photo9} alt="Community" />
+                            <img className="community-thumb" src={photo9} alt="Community" />
                             <span>Cafeeee</span>
                         </div>
                     </div>

@@ -14,50 +14,50 @@ const Friends: React.FC = () => {
     return (
         <div className='friends-card__card-outer'>
             <div className='friends-card__card-inner'>
-                <header className="card-header">
+                <header className="friends-card__header">
                     <span>Amigos (248)</span>
                     <span>Ver todos</span>
                 </header>
-                <section className="card-body-friends">
+                <section className="friends-card__body">
                     <div className="friends-row">
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo1} alt="Friend" />
+                            <img className="friend-thumb" src={photo1} alt="Friend" />
                             <span>Fernando</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo2} alt="Friend" />
+                            <img className="friend-thumb" src={photo2} alt="Friend" />
                             <span>Ana</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo3} alt="Friend" />
+                            <img className="friend-thumb" src={photo3} alt="Friend" />
                             <span>Carlos</span>
                         </div>
                     </div>
                     <div className="friends-row">
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo4} alt="Friend" />
+                            <img className="friend-thumb" src={photo4} alt="Friend" />
                             <span>Vitor</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo5} alt="Friend" />
+                            <img className="friend-thumb" src={photo5} alt="Friend" />
                             <span>Matheus</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo6} alt="Friend" />
+                            <img className="friend-thumb" src={photo6} alt="Friend" />
                             <span>Ramos</span>
                         </div>
                     </div>
                     <div className="friends-row">
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo7} alt="Friend" />
+                            <img className="friend-thumb" src={photo7} alt="Friend" />
                             <span>Eiji</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo8} alt="Friend" />
+                            <img className="friend-thumb" src={photo8} alt="Friend" />
                             <span>Julia</span>
                         </div>
                         <div className="friends-thumb-container">
-                            <img className="friend-tumb" src={photo9} alt="Friend" />
+                            <img className="friend-thumb" src={photo9} alt="Friend" />
                             <span>Carol</span>
                         </div>
                     </div>

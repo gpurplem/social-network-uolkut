@@ -1,7 +1,7 @@
 .user-info-wrapper {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
     flex-shrink: 0;
     background-color: #FDFEFF;
     border-radius: 16px;
@@ -9,4 +9,6 @@
     text-align: left;
     color: #4B4B4B;
     font-family: SF Pro Display;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }

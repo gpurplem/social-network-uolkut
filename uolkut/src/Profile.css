@@ -1,4 +1,4 @@
-.body-container {
+.profile-wrapper {
     display: flex;
     width: 100%;
     padding-top: 80px;
@@ -6,11 +6,10 @@
     justify-content: center;
 }
 
-.body-content {
+.profile-content {
     display: flex;
     flex-direction: row;
     width: 85vw;
-    /* max-width: 1280px; */
     justify-content: space-between;
 }
 
@@ -21,19 +20,25 @@
     gap: 25px;
 }
 
-.left-section {
-    width: 23%;
+.profile-left-section {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.center-section {
+.profile-center-section {
     width: 51%;
 }
 
-.right-section {
-    width: 23%;
+.profile-right-section {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-@media screen and (max-width: 1279px) {
+/* @media screen and (max-width: 1279px) {
 
     .body-content {
         flex-direction: column;
@@ -69,4 +74,4 @@
     .user-tags-items {
         flex-wrap: wrap;
     }
-}
+} */

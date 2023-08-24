@@ -1,6 +1,7 @@
 import Card from "./card";
 import UolkutCircle from "../assets/uolkut-circle.svg";
 import './accessFormCard.css'
+import { useNavigate } from 'react-router-dom';
 
 interface propsInterface {
     form: string;
@@ -11,6 +12,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
     let headerText;
     let content;
     let emailPlaceholder = "E-mail";
+    const navigate = useNavigate();
 
     function drawSignupPage(event: React.FormEvent) {
         event.preventDefault();
@@ -27,6 +29,11 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
         props.setPage('login');
     }
 
+    function loginHandler(event: React.FormEvent) {
+        event.preventDefault();
+        navigate('/profile');
+    }
+
     if (props.form === 'login') {
         headerText = 'Accesse o UOLkut';
 
@@ -39,7 +46,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
                     <label htmlFor="remember-check" className="card-body__label">Lembrar minha senha</label>
                 </div>
 
-                <button type="submit" className="card-body__login-button">Entrar</button>
+                <button type="submit" className="card-body__login-button" onClick={loginHandler}>Entrar</button>
 
                 <button type="button" className="card-body__signup-button" onClick={drawSignupPage}>Criar conta</button>
 

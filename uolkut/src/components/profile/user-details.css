@@ -1,0 +1,30 @@
+.user-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.user-detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-detail__label {
+  color: #B4AEAE;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-detail__data {
+  color: #4B4B4B;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

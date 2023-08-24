@@ -5,13 +5,34 @@
     line-height: normal;
 }
 
-.user-welcome__balloon-box {
+.user-welcome__balloon-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.user-welcome__balloon {
     background-color: #EFF3F8;
-    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px 15px;
     margin-top: 10px;
     word-wrap: break-word;
     margin-bottom: 24px;
     font-size: var(--font-small);
+    border: none;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.user-welcome__balloon-triangle {
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid #EFF3F8;
+
+    position: absolute;
+    transform: translate(120%, 0%);
 }

@@ -1,7 +1,7 @@
 import './navbar.css'
 import mainLogo from '../assets/uolkut-logo.svg'
-import searchIcon from '../assets/search-icon.svg'
 import userImage from '../assets/profile-pic-user.jpg'
+import SearchBar from './search-bar'
 
 interface propsInterface {
     page: string;
@@ -37,10 +37,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
                     <span className="navbar__link">Jogos</span>
                 </div>
                 <div className="navbar-group__right">
-                    <div className="navbar__search-bar-wrapper">
-                        <img src={searchIcon} alt="Pesquisar" className="navbar__search-icon" />
-                        <input type="search" placeholder="Pesquisar no UOLkut" className="navbar__search-bar-content" />
-                    </div>
+                    <SearchBar parent='navbar' />
                     <div className="navbar__user-profile">
                         <img src={userImage} alt="Usuário" />
                         <span className="navbar__user-name">Iuri Silva</span>

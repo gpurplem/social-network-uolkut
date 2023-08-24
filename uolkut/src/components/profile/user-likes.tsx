@@ -1,3 +1,5 @@
+import './user-likes.css';
+
 const UserLikes: React.FC = () => {
     return (
         <div className="user-info-all">

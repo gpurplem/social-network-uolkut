@@ -1,6 +1,7 @@
 .user-info-wrapper {
     display: flex;
-    max-width: 100%;
+    flex-direction: column;
+    width: 500px;
     flex-shrink: 0;
     background-color: #FDFEFF;
     border-radius: 16px;

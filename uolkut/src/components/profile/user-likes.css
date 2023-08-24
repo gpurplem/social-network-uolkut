@@ -1,11 +1,32 @@
 .user-likes__label {
-
+    color: #B4AEAE;
+    font-family: Roboto Flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .user-likes__data {
-
+    border-radius: 30px;
+    border: 1px solid #ED6D25;
+    display: inline-flex;
+    padding: 2px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 16px;
+    font-size: var(--font-smallest);
 }
 
 .user-likes__link {
-    
+    color: #ed2590;
+    color: #ed2590;
+    font-family: SF Pro Display;
+    font-size: var(--font-smallest);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    text-decoration: none;
 }

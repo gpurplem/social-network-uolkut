@@ -1,3 +1,20 @@
+.communities-card__card-outer {
+    background: #FDFEFF;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.communities-card__card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 .card-header {
     display: flex;
     flex-direction: row;

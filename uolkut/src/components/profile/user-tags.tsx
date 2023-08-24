@@ -3,28 +3,28 @@ import star from '../profile/images/Star.svg';
 import smiley from '../profile/images/Smiley.svg';
 import thumbsUp from '../profile/images/ThumbsUp.svg';
 import heart from '../profile/images/Heart.svg';
-import './userTags.css';
+import './user-tags.css';
 
 const UserTags: React.FC = () => {
   return (
-    <div className="user-tags">
-      <ul className='user-tags-items'>
+    <div className="user-tags-wrapper">
+      <ul className='user-tags-list'>
         <li>
           <span>Fãs</span>
-          <div className="tag-content">
+          <div className="user-tags__tag">
             <img src={star} alt="Fãs" /><span>85</span>
           </div>
         </li>
         <li>
           <span>Confiável</span>
-          <div className="tag-content">
+          <div className="user-tags__tag">
             <img src={smiley} alt="Confiável" />
             <img src={smiley} alt="Confiável" />
           </div>
         </li>
         <li>
           <span>Legal</span>
-          <div className="tag-content">
+          <div className="user-tags__tag">
             <img src={thumbsUp} alt="Legal" />
             <img src={thumbsUp} alt="Legal" />
             <img src={thumbsUp} alt="Legal" />
@@ -32,7 +32,7 @@ const UserTags: React.FC = () => {
         </li>
         <li>
           <span>Sexy</span>
-          <div className="tag-content">
+          <div className="user-tags__tag">
             <img src={heart} alt="Sexy" />
             <img src={heart} alt="Sexy" />
           </div>

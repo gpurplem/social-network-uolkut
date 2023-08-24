@@ -5,8 +5,8 @@ import EditProfileButton from './edit-profile-button';
 import Friends from './friends-card';
 import Communities from './communities-card';
 import { Routes, Route } from 'react-router-dom';
-import UserProfile from './userProfile';
-import EditProfile from './editProfile';
+// import UserProfile from './userProfile';
+// import EditProfile from './editProfile';
 
 const Layout: React.FC = () => {
   let isMobile: boolean = window.innerWidth < 1280;
@@ -44,8 +44,8 @@ const Layout: React.FC = () => {
           {!isMobile && 
           <div className="profile-section center-section">
             <Routes>
-              <Route path="/" element={<UserProfile />} />
-              <Route path="/edit" element={<EditProfile />} />
+              {/* <Route path="/" element={<UserProfile />} /> */}
+              {/* <Route path="/edit" element={<EditProfile />} /> */}
             </Routes>
           </div>
           }
@@ -54,8 +54,8 @@ const Layout: React.FC = () => {
             <Friends />
             {isMobile && 
               <Routes>
-                <Route path="/" element={<UserProfile />} />
-                <Route path="/edit" element={<EditProfile />} />
+                {/* <Route path="/" element={<UserProfile />} /> */}
+                {/* <Route path="/edit" element={<EditProfile />} /> */}
               </Routes>
             }
             <Communities />

@@ -1,14 +1,13 @@
-import Card from './card'
 import ProfilePicture from '../profile/images/profile-pic-user.jpg'
 import './profile-card.css'
 
 const Profile: React.FC = () => {
     return (
-        <Card>
-            <img className='profile-picture' src={ProfilePicture} alt="Profile picture" />
+        <div className='profile-card-wrapper'>
+            <img className='profile-picture' src={ProfilePicture} alt="User" />
             <span className='profile-name'>Iuri Silva</span>
             <span className='profile-summary'>Solteiro, Brasil</span>
-        </Card>
+        </div>
     )
 }
 

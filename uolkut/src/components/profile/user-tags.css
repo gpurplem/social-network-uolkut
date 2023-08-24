@@ -1,9 +1,10 @@
-.user-tags {
+.user-tags-wrapper {
   display: flex;
   margin-top: 20px;
 }
 
-ul {
+.user-tags-list {
+  flex-wrap: wrap;
   display: flex;
   list-style: none;
   padding: 0;
@@ -13,7 +14,7 @@ ul {
   gap: 70px;
 }
 
-li {
+.user-tags-list li {
   color: #4B4B4B;
   font-family: SF Pro Display;
   font-size: var(--font-small);
@@ -22,13 +23,13 @@ li {
   line-height: normal;
 }
 
-.tag-content {
+.user-tags__tag {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-img {
+.user-tags__tag img {
   width: 24px;
   height: 24px;
 }

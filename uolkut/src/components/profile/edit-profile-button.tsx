@@ -1,23 +1,16 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Card from './card';
 import './edit-profile-button.css';
 
 const EditProfileButton: React.FC = () => {
-    const navigate = useNavigate();
-    const handleEditProfileClick = () => {
-        navigate('/edit');
-    };
 
     return (
-        <Card>
-            <span 
-                className='edit-profile-button' 
-                onClick={handleEditProfileClick}
-            >
-                Editar meu perfil
-            </span>
-        </Card>
+        <div className='edit-profile-button__card-outer'>
+            <div className='edit-profile-button__card-inner'>
+                <span className='edit-profile-button'>
+                    Editar meu perfil
+                </span>
+            </div>
+        </div>
     );
 }
 

@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
 import Navbar from './components/navbar';
 import ProfileCard from './components/profile/profile-card';
 import EditProfileButton from './components/profile/edit-profile-button';
 import Friends from './components/profile/friends-card';
 import Communities from './components/profile/communities-card';
-import UserInfo from './components/profile/user-info-card';
+import UserInfoCard from './components/profile/user-info-card';
 import SearchBar from './components/search-bar';
-import { useScreenSize } from './useScreenSize';
+import UserEditCard from './components/profile/user-edit-card';
+import { useScreenSize } from './hooks/useScreenSize';
+import { useIsEditing } from './hooks/useIsEditing';
 import './Profile.css';
 
 const Layout: React.FC = () => {
 
   const { isScreenSmall } = useScreenSize();
+  const { isEditing, toggleIsEditing } = useIsEditing();
 
   return (
     <>
@@ -21,7 +23,7 @@ const Layout: React.FC = () => {
           <div className='profile-left-section'>
             <SearchBar parent='' />
             <ProfileCard />
-            <EditProfileButton />
+            <EditProfileButton toggle={toggleIsEditing}/>
           </div>
 
           {
@@ -32,7 +34,7 @@ const Layout: React.FC = () => {
           }
 
           <div className='profile-center-section'>
-            <UserInfo />
+            {isEditing ? <UserEditCard /> : <UserInfoCard />}
           </div>
           <div className='profile-right-section'>
             {!isScreenSmall && <Friends />}

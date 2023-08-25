@@ -2,7 +2,7 @@ import Card from "./card";
 import UolkutCircle from "../assets/uolkut-circle.svg";
 import './accessFormCard.css'
 import { useNavigate } from 'react-router-dom';
-import { useScreenSize } from '../useScreenSize';
+import { useScreenSize } from '../hooks/useScreenSize';
 
 interface propsInterface {
     form: string;

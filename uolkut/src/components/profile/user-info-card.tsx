@@ -4,7 +4,7 @@ import UserDetails from "./user-details";
 import UserLikes from "./user-likes";
 import './user-info-card.css';
 
-const UserInfo: React.FC = () => {
+const UserInfoCard: React.FC = () => {
     return (
         <div className="user-info-wrapper">
             <UserWelcome />
@@ -15,4 +15,4 @@ const UserInfo: React.FC = () => {
     );
 }
 
-export default UserInfo;
+export default UserInfoCard;

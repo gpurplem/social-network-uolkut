@@ -1,0 +1,114 @@
+.user-edit-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #FDFEFF;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: left;
+    color: #4B4B4B;
+    font-family: Roboto Flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-edit__text {
+    color: #ED6D25;
+    font-family: Roboto Flex;
+    font-size: var(--font-largest);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+    align-self: center;
+    padding: 1rem 0px 3rem 0px;
+}
+
+.user-edit__inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.user-edit__occupation,
+.user-edit__name,
+.user-edit__city,
+.user-edit__country,
+.user-edit__date,
+.user-edit__password,
+.user-edit__select {
+    background-color: #EFF3F8;
+    border-radius: 8px;
+    margin: 4px 0;
+    padding: 15px 10px;
+    border: none;
+}
+
+.user-edit__occupation,
+.user-edit__name,
+.user-edit__city,
+.user-edit__password {
+    width: 42%;
+}
+
+.user-edit__country,
+.user-edit__date {
+    width: 30%;
+}
+
+.user-edit__occupation-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-edit__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #EFF3F8;
+    border-radius: 8px;
+    margin: 4px 0;
+    padding: 8px 12px;
+    border: none;
+    width: 30%;
+    align-self: self-start;
+    color: #868686 !important;
+    font-family: Roboto Flex;
+    font-size: calc(var(--font-small) - 1.5px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background-image: url('../../assets/select-arrowdown.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 13px 13px;
+    color: #333;
+}
+
+.user-edit__select option:first-child {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.user-edit__save-button {
+    border-radius: 8px;
+    background: #ED6D25;
+    color: #EFF3F8;
+    font-family: Roboto Flex;
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2rem 0 4rem 0;
+    padding: 16px 0;
+    border: none;
+    width: 50%;
+    align-self: center;
+}

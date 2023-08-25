@@ -25,7 +25,7 @@
 
 .profile-name {
     color: #4B4B4B;
-    font-family: SF Pro Display;
+    font-family: Roboto Flex;
     font-size: var(--font-large);
     font-style: normal;
     font-weight: 500;
@@ -36,7 +36,7 @@
 
 .profile-summary {
     color: #4B4B4B;
-    font-family: SF Pro Display;
+    font-family: Roboto Flex;
     font-size: var(--font-medium);
     font-style: normal;
     font-weight: 400;

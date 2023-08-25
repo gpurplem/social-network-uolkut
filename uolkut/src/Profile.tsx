@@ -44,7 +44,6 @@ const Layout: React.FC = () => {
             <EditProfileButton />
           </div>
 
-
           {
             isScreenSmall && 
             <div className='profile-right-section'>

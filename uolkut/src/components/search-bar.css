@@ -13,9 +13,10 @@
     border: none;
     background-color: transparent;
     outline: none;
-    font-family: inherit;
+    font-family: Roboto Flex;
     font-size: var(--font-small);
     line-height: 24px;
+    width: 100%;
 }
 
 .navbar__search-icon {

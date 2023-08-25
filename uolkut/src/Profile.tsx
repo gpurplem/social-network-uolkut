@@ -23,23 +23,27 @@ const Layout: React.FC = () => {
           <div className='profile-left-section'>
             <SearchBar parent='' />
             <ProfileCard />
-            <EditProfileButton toggle={toggleIsEditing}/>
+            <EditProfileButton toggle={toggleIsEditing} hideButton={isEditing} />
           </div>
 
           {
-            isScreenSmall && 
+            !isEditing && isScreenSmall && 
             <div className='profile-right-section'>
               <Friends />
             </div>
           }
 
           <div className='profile-center-section'>
-            {isEditing ? <UserEditCard /> : <UserInfoCard />}
+            {isEditing ? <UserEditCard toggle={toggleIsEditing} /> : <UserInfoCard />}
           </div>
-          <div className='profile-right-section'>
-            {!isScreenSmall && <Friends />}
-            <Communities />
-          </div>
+          
+          {!isEditing ? 
+            <div className='profile-right-section'>
+              {!isScreenSmall && <Friends />}
+              <Communities />
+            </div> : <div className='profile-right-section'></div>
+          }
+          
         </div>
       </div>
     </>

@@ -13,3 +13,7 @@
     border: none;
     padding: 24px;
 }
+
+.edit-profile-button--hidden {
+    display: none;
+}

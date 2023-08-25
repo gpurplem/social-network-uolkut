@@ -1,6 +1,19 @@
 import './user-edit-card.css';
 
-const UserEditCard: React.FC = () => {
+interface EditProfileButtonProps {
+    toggle: () => void;
+}
+
+const UserEditCard: React.FC<EditProfileButtonProps> = (props) => {
+    
+    function updateProfile(event: React.FormEvent) {
+        event.preventDefault();
+
+        //validation
+        
+        props.toggle();
+    }
+
     return (
         <div className="user-edit-wrapper">
             <span className="user-edit__text">Editar informações</span>
@@ -27,7 +40,7 @@ const UserEditCard: React.FC = () => {
                 <input type="password" name="" id="" placeholder="Repetir senha" className="user-edit__password" />
             </div>
 
-            <button type="submit" className="user-edit__save-button">Salvar</button>
+            <button type="submit" className="user-edit__save-button" onClick={updateProfile}>Salvar</button>
         </div>
     );
 }

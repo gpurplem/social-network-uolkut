@@ -6,32 +6,12 @@ import Friends from './components/profile/friends-card';
 import Communities from './components/profile/communities-card';
 import UserInfo from './components/profile/user-info-card';
 import SearchBar from './components/search-bar';
+import { useScreenSize } from './useScreenSize';
 import './Profile.css';
 
 const Layout: React.FC = () => {
 
-  // Change components position when width is below 1280px: begin
-  let isScreenSmall: boolean = window.innerWidth < 1280;
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    if (windowWidth < 1280) {
-      isScreenSmall = true;
-    } else {
-      isScreenSmall = false;
-    }
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, [windowWidth]);
-  // Change components position when width is below 1280px: end
+  const { isScreenSmall } = useScreenSize();
 
   return (
     <>

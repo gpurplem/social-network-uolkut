@@ -42,6 +42,7 @@
     margin-right: 10px;
     padding: 0;
     font-size: var(--font-medium);
+    cursor: pointer;
 }
 
 .navbar__user-name {
@@ -59,6 +60,7 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     max-height: 15%;
+    cursor: pointer;
 }
 
 .navbar__user-profile {

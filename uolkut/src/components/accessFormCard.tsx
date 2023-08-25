@@ -2,6 +2,7 @@ import Card from "./card";
 import UolkutCircle from "../assets/uolkut-circle.svg";
 import './accessFormCard.css'
 import { useNavigate } from 'react-router-dom';
+import { useScreenSize } from '../useScreenSize';
 
 interface propsInterface {
     form: string;
@@ -13,6 +14,8 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
     let content;
     let emailPlaceholder = "E-mail";
     const navigate = useNavigate();
+
+    const { isScreenSmall } = useScreenSize();
 
     function drawSignupPage(event: React.FormEvent) {
         event.preventDefault();
@@ -60,9 +63,11 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
             <>
                 <input type="password" name="" id="" placeholder="Senha" className="card-body__password" />
 
+                <input type="text" name="" id="" placeholder="Nome" className="card-body__name" />
+
                 <div className="card-body__sigin-wrapper">
                     <div className="card-body__sigin-wrapper-inner">
-                        <input type="text" name="" id="" placeholder="Nascimento" className="card-body__date" />
+                        {isScreenSmall ? <input type="text" name="" id="" placeholder="DD/MM/AAAA" className="card-body__date" /> : <input type="text" name="" id="" placeholder="Nascimento" className="card-body__date" />}                  
 
                         <input type="text" name="" id="" placeholder='Profissão' className="card-body__occupation" />
                     </div>

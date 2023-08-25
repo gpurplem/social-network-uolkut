@@ -1,13 +1,13 @@
 import "./communities-card.css";
-import photo1 from "../profile/images/community-pic (1).jpg";
-import photo2 from "../profile/images/community-pic (2).jpg";
-import photo3 from "../profile/images/community-pic (3).jpg";
-import photo4 from "../profile/images/community-pic (4).jpg";
-import photo5 from "../profile/images/community-pic (5).jpg";
-import photo6 from "../profile/images/community-pic (6).jpg";
-import photo7 from "../profile/images/community-pic (7).jpg";
-import photo8 from "../profile/images/community-pic (8).jpg";
-import photo9 from "../profile/images/community-pic (9).jpg";
+import photo1 from "../../assets/profile-images/community-pic (1).jpg";
+import photo2 from "../../assets/profile-images/community-pic (2).jpg";
+import photo3 from "../../assets/profile-images/community-pic (3).jpg";
+import photo4 from "../../assets/profile-images/community-pic (4).jpg";
+import photo5 from "../../assets/profile-images/community-pic (5).jpg";
+import photo6 from "../../assets/profile-images/community-pic (6).jpg";
+import photo7 from "../../assets/profile-images/community-pic (7).jpg";
+import photo8 from "../../assets/profile-images/community-pic (8).jpg";
+import photo9 from "../../assets/profile-images/community-pic (9).jpg";
 
 const Communities: React.FC = () => {
     return (

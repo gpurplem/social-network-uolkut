@@ -1,26 +1,19 @@
 .edit-profile-button {
     color: #ED6D25;
     font-family: Roboto Flex;
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
     cursor: pointer;
-}
-
-.edit-profile-button__card-outer {
     background: #FDFEFF;
     width: 100%;
-    display: flex;
     border-radius: 16px;
-    flex-direction: column;
+    border: none;
     padding: 24px;
 }
 
-.edit-profile-button__card-inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.edit-profile-button--hidden {
+    display: none;
 }

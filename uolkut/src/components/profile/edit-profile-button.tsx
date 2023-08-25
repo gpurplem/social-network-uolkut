@@ -1,16 +1,24 @@
 import React from 'react';
 import './edit-profile-button.css';
 
-const EditProfileButton: React.FC = () => {
+interface EditProfileButtonProps {
+    hideButton: boolean;
+    toggle: () => void;
+}
+
+const EditProfileButton: React.FC<EditProfileButtonProps> = (props) => {
+    function toggleEditing(event: React.FormEvent) {
+        event.preventDefault();
+        props.toggle();
+    }
+
+    let buttonClass = props.hideButton ? 'edit-profile-button edit-profile-button--hidden' : 'edit-profile-button';
+
 
     return (
-        <div className='edit-profile-button__card-outer'>
-            <div className='edit-profile-button__card-inner'>
-                <span className='edit-profile-button'>
-                    Editar meu perfil
-                </span>
-            </div>
-        </div>
+        <button type="submit" className={buttonClass} onClick={toggleEditing}>
+            Editar meu perfil
+        </button>
     );
 }
 

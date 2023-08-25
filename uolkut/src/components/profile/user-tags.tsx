@@ -1,8 +1,8 @@
 import React from 'react';
-import star from '../profile/images/Star.svg';
-import smiley from '../profile/images/Smiley.svg';
-import thumbsUp from '../profile/images/ThumbsUp.svg';
-import heart from '../profile/images/Heart.svg';
+import star from '../../assets/Star.svg';
+import smiley from '../../assets/Smiley.svg';
+import thumbsUp from '../../assets/ThumbsUp.svg';
+import heart from '../../assets/Heart.svg';
 import './user-tags.css';
 
 const UserTags: React.FC = () => {

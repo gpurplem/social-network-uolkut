@@ -1,4 +1,4 @@
-import ProfilePicture from '../profile/images/profile-pic-user.jpg'
+import ProfilePicture from '../../assets/profile-images/profile-pic-user.jpg'
 import './profile-card.css'
 
 const Profile: React.FC = () => {

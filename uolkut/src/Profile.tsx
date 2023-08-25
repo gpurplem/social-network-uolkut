@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
         <div className='profile-content'>
           <div className='profile-left-section'>
             <SearchBar parent='' />
-            <ProfileCard />
+            <ProfileCard hideInfo={isEditing} />
             <EditProfileButton toggle={toggleIsEditing} hideButton={isEditing} />
           </div>
 

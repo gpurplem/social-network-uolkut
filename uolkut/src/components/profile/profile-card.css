@@ -44,3 +44,19 @@
     text-align: center;
     padding: 15px 0px;
 }
+
+.profile-card__change-picture-button {
+    display: flex;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 3px solid #ED6D25;
+    background-color: #FDFEFF;
+    padding: 3px;
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+
+    position: absolute;
+    transform: translate(-20%, -140%);
+}

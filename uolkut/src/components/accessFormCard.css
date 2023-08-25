@@ -39,6 +39,7 @@
 
 .card-body__email,
 .card-body__password,
+.card-body__name,
 .card-body__date,
 .card-body__occupation,
 .card-body__country,
@@ -46,7 +47,7 @@
     background-color: #EFF3F8;
     border-radius: 8px;
     margin: 4px 0;
-    padding: 16px 20px;
+    padding: 15px 20px;
     border: none;
 }
 
@@ -194,7 +195,7 @@ input[type='checkbox']:hover {
     -moz-appearance: none;
     background-color: #EFF3F8;
     border-radius: 8px;
-    margin: 12px 0;
+    margin: 4px 0;
     padding: 10px 12px;
     border: none;
     width: 45%;
@@ -257,4 +258,30 @@ input[type='checkbox']:hover {
     align-self: center;
     padding: 60px 0 16px 0;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .card-body__select {
+        width: 50%;
+        font-size: var(--font-smallest);
+    }
+
+    .card-body__date-text {
+        display: none;
+    }
+
+    .card-body__date::placeholder {
+        font-size: var(--font-smallest);
+    }
+
+    .card-body__email,
+    .card-body__password,
+    .card-body__name,
+    .card-body__date,
+    .card-body__occupation,
+    .card-body__country,
+    .card-body__city {
+        padding: 15px 6px;
+    }
+
 }

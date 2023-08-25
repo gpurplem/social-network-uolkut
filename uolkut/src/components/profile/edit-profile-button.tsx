@@ -6,15 +6,13 @@ interface EditProfileButtonProps {
 }
 
 const EditProfileButton: React.FC<EditProfileButtonProps> = (props) => {
+    function toggleEditing(event: React.FormEvent) {
+        event.preventDefault();
+        props.toggle();
+    }
 
     return (
-        <div className='edit-profile-button__card-outer'>
-            <div className='edit-profile-button__card-inner' onClick={props.toggle}>
-                <span className='edit-profile-button'>
-                    Editar meu perfil
-                </span>
-            </div>
-        </div>
+        <button type="submit" className="edit-profile-button" onClick={toggleEditing}>Editar meu perfil</button>
     );
 }
 

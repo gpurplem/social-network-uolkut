@@ -43,14 +43,90 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
         props.setPage('login');
     }
 
+    async function logIn() {
+        const user = {
+            email: emailRef.current?.value,
+            password: passwordRef.current?.value,
+        }
+
+        console.log(user.email);
+        console.log(user.password);
+        const queryString = user.email + '&password=' + user.password;
+
+        const response = await fetch('http://localhost:5000/users/?email=' + queryString, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        const data = await response.json();
+        await navigate('/profile/' + data[0].id);
+    }
+
     function loginHandler(event: React.FormEvent) {
         event.preventDefault();
-        navigate('/profile');
+
+        logIn();
+    }
+
+    async function saveNewProfile() {
+        const user = {
+            id: Math.floor(Math.random() * 1000000000),
+            email: emailRef.current?.value,
+            password: newPasswordRef.current?.value,
+        };
+
+        const userData = {
+            id: user.id,
+            name: nameRef.current?.value,
+            birthDate: birthDateRef.current?.value,
+            occupation: occupationRef.current?.value,
+            country: countryRef.current?.value,
+            city: cityRef.current?.value,
+            relationship: relationshipRef.current?.value,
+        }
+
+        const responseUser = await fetch('http://localhost:5000/users', {
+            method: "POST",
+            body: JSON.stringify(user),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        const responseUserData = await fetch('http://localhost:5000/users-data', {
+            method: "POST",
+            body: JSON.stringify(userData),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        if (responseUser.status === 201 && responseUserData.status === 201) {
+            if (emailRef.current &&
+                newPasswordRef.current &&
+                nameRef.current &&
+                birthDateRef.current &&
+                occupationRef.current &&
+                countryRef.current &&
+                cityRef.current &&
+                relationshipRef.current) {
+                emailRef.current.value = '';
+                newPasswordRef.current.value = '';
+                nameRef.current.value = '';
+                birthDateRef.current.value = '';
+                occupationRef.current.value = '';
+                countryRef.current.value = '';
+                cityRef.current.value = '';
+                relationshipRef.current.value = '';
+            }
+        }
     }
 
     function createProfile(event: React.FormEvent) {
         event.preventDefault();
-        
+        saveNewProfile();
     }
 
     if (props.form === 'login') {

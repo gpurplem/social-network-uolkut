@@ -10,15 +10,6 @@ import Image from './assets/access-page-image.png';
 function Home() {
   const [page, setPage] = useState('login');
 
-  fetch('http://localhost:5000/users')
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-    });
-  
-
   return (
     <>
       <Navbar page='logged-out' />

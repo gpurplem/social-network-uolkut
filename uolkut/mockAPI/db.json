@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": 207519769,
+      "email": "daniel@mail.com",
+      "password": "12345"
+    },
+    {
+      "id": 366649407,
+      "email": "francine@mail.com",
+      "password": "12345"
+    },
+    {
+      "id": 211303362,
+      "email": "jana@mail.com",
+      "password": "12345"
+    },
+    {
+      "id": 966564470,
+      "email": "tulla@mail.com",
+      "password": "12345"
+    },
+    {
+      "id": 914764764,
+      "email": "",
+      "password": ""
+    }
+  ],
+  "users-data": [
+    {
+      "id": 207519769,
+      "name": "Daniel",
+      "birthDate": "10/05/1995",
+      "occupation": "Jornalista",
+      "country": "Brasil",
+      "city": "São Paulo",
+      "relationship": "Divorciado"
+    },
+    {
+      "id": 366649407,
+      "name": "Francine",
+      "birthDate": "15/06/1999",
+      "occupation": "Advogada",
+      "country": "Brasil",
+      "city": "São Paulo",
+      "relationship": "Namorando"
+    },
+    {
+      "id": 211303362,
+      "name": "Jana",
+      "birthDate": "09/08/1991",
+      "occupation": "Cabeleireira",
+      "country": "Brasil",
+      "city": "Campinas",
+      "relationship": "Namorando"
+    },
+    {
+      "id": 966564470,
+      "name": "Tulla",
+      "birthDate": "20/08/1975",
+      "occupation": "Famosa",
+      "country": "Brasil",
+      "city": "Guarujá",
+      "relationship": "Casado"
+    },
+    {
+      "id": 914764764,
+      "name": "",
+      "birthDate": "",
+      "occupation": "",
+      "country": "",
+      "city": "",
+      "relationship": ""
+    }
+  ]
+}

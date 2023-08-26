@@ -5,6 +5,7 @@ import SearchBar from './search-bar'
 
 interface propsInterface {
     page: string;
+    name: string;
 }
 
 const Navbar: React.FC<propsInterface> = (props) => {
@@ -40,7 +41,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
                     <SearchBar parent='navbar' />
                     <div className="navbar__user-profile">
                         <img src={userImage} alt="Usuário" />
-                        <span className="navbar__user-name">Iuri Silva</span>
+                        <span className="navbar__user-name">{props.name}</span>
                         <i className="navbar__arrow-down"></i>
                     </div>
                 </div>

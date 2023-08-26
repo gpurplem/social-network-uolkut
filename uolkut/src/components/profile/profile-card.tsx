@@ -4,6 +4,9 @@ import './profile-card.css'
 
 interface ProfileCardProps {
     hideInfo: boolean;
+    name: string;
+    country: string;
+    relationship: string;
 }
 
 const Profile: React.FC<ProfileCardProps> = (props) => {
@@ -15,8 +18,8 @@ const Profile: React.FC<ProfileCardProps> = (props) => {
                 {props.hideInfo &&  <img src={ChangePictureButton} alt="" className='profile-card__change-picture-button' />}
             </div>
 
-            {!props.hideInfo && <span className='profile-name'>Iuri Silva</span>}
-            {!props.hideInfo && <span className='profile-summary'>Solteiro, Brasil</span>}
+            {!props.hideInfo && <span className='profile-name'>{props.name}</span>}
+            {!props.hideInfo && <span className='profile-summary'>{props.relationship}, {props.country}</span>}
         </div>
     );
 }

@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "teste@teste.com",
+      "password": 123456
+    },
+    {
+      "id": 2,
+      "email": "aaa",
+      "password": 111
+    },
+    {
+      "id": 3,
+      "email": "bbb",
+      "password": 222
+    }
+  ],
+  "users-data": [
+    {
+      "id": 1,
+      "name": "Teste",
+      "cpf": "12345678910",
+      "phone": "12345678910",
+      "address": "Rua Teste, 123",
+      "city": "Teste",
+      "state": "Teste",
+      "country": "Teste",
+      "zip": "12345678910",
+      "user_id": 1
+    }
+  ]
+}

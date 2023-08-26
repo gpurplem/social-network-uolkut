@@ -3,6 +3,7 @@ import UolkutCircle from "../assets/uolkut-circle.svg";
 import './accessFormCard.css'
 import { useNavigate } from 'react-router-dom';
 import { useScreenSize } from '../hooks/useScreenSize';
+import { useRef } from 'react';
 
 interface propsInterface {
     form: string;
@@ -13,9 +14,19 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
     let headerText;
     let content;
     let emailPlaceholder = "E-mail";
-    const navigate = useNavigate();
 
+    const navigate = useNavigate();
     const { isScreenSmall } = useScreenSize();
+
+    const emailRef = useRef<HTMLInputElement>(null);
+    const passwordRef = useRef<HTMLInputElement>(null);
+    const newPasswordRef = useRef<HTMLInputElement>(null);
+    const nameRef = useRef<HTMLInputElement>(null);
+    const birthDateRef = useRef<HTMLInputElement>(null);
+    const occupationRef = useRef<HTMLInputElement>(null);
+    const countryRef = useRef<HTMLInputElement>(null);
+    const cityRef = useRef<HTMLInputElement>(null);
+    const relationshipRef = useRef<HTMLSelectElement>(null);
 
     function drawSignupPage(event: React.FormEvent) {
         event.preventDefault();
@@ -37,12 +48,17 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
         navigate('/profile');
     }
 
+    function createProfile(event: React.FormEvent) {
+        event.preventDefault();
+        
+    }
+
     if (props.form === 'login') {
         headerText = 'Accesse o UOLkut';
 
         content = (
             <>
-                <input type="password" name="" id="" placeholder="Senha" className="card-body__password" />
+                <input type="password" name="" id="" placeholder="Senha" className="card-body__password" ref={passwordRef} />
 
                 <div className="card-body__checkbox-wrapper">
                     <input type="checkbox" name="remember-check" id="" className="card-body__checkbox" />
@@ -61,27 +77,27 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
 
         content = (
             <>
-                <input type="password" name="" id="" placeholder="Senha" className="card-body__password" />
+                <input type="password" name="" id="" placeholder="Senha" className="card-body__password" ref={newPasswordRef} />
 
-                <input type="text" name="" id="" placeholder="Nome" className="card-body__name" />
+                <input type="text" name="" id="" placeholder="Nome" className="card-body__name" ref={nameRef} />
 
                 <div className="card-body__sigin-wrapper">
                     <div className="card-body__sigin-wrapper-inner">
-                        {isScreenSmall ? <input type="text" name="" id="" placeholder="DD/MM/AAAA" className="card-body__date" /> : <input type="text" name="" id="" placeholder="Nascimento" className="card-body__date" />}                  
+                        {isScreenSmall ? <input type="text" name="" id="" placeholder="DD/MM/AAAA" className="card-body__date" ref={birthDateRef} /> : <input type="text" name="" id="" placeholder="Nascimento" className="card-body__date" ref={birthDateRef} />}
 
-                        <input type="text" name="" id="" placeholder='Profissão' className="card-body__occupation" />
+                        <input type="text" name="" id="" placeholder='Profissão' className="card-body__occupation" ref={occupationRef} />
                     </div>
 
                     <span className="card-body__date-text">DD/MM/AAAA</span>
 
                     <div className="card-body__sigin-wrapper-inner">
-                        <input type="text" name="" id="" placeholder="País" className="card-body__country" />
+                        <input type="text" name="" id="" placeholder="País" className="card-body__country" ref={countryRef} />
 
-                        <input type="text" name="" id="" placeholder="Cidade" className="card-body__city" />
+                        <input type="text" name="" id="" placeholder="Cidade" className="card-body__city" ref={cityRef} />
                     </div>
                 </div >
 
-                <select name="" id="" className="card-body__select">
+                <select name="" id="" className="card-body__select" ref={relationshipRef} >
                     <option value="" >Relacionamento</option>
                     <option value="Solteiro">Solteiro</option>
                     <option value="Casado">Casado</option>
@@ -90,7 +106,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
                     <option value="Preocupado">Preocupado</option>
                 </select>
 
-                <button type="submit" className="card-body__login-button">Criar conta</button>
+                <button type="submit" className="card-body__login-button" name="create-account" onClick={createProfile}>Criar conta</button>
             </>
         );
     } else if (props.form === 'forgot-password') {
@@ -117,7 +133,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
 
             <section className="card-body">
                 <form action="" className="card-body__form">
-                    <input type="email" name="" id="" placeholder={emailPlaceholder} className="card-body__email" />
+                    <input type="email" name="" id="" placeholder={emailPlaceholder} className="card-body__email" ref={emailRef} />
 
                     {content}
 

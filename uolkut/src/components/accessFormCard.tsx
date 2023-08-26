@@ -49,8 +49,6 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
             password: passwordRef.current?.value,
         }
 
-        console.log(user.email);
-        console.log(user.password);
         const queryString = user.email + '&password=' + user.password;
 
         const response = await fetch('http://localhost:5000/users/?email=' + queryString, {
@@ -61,7 +59,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
         });
 
         const data = await response.json();
-        await navigate('/profile/' + data[0].id);
+        await navigate('/profile/?u=' + data[0].id);
     }
 
     function loginHandler(event: React.FormEvent) {

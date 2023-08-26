@@ -2,15 +2,21 @@ import './user-edit-card.css';
 
 interface EditProfileButtonProps {
     toggle: () => void;
+    name: string;
+    country: string;
+    relationship: string;
+    birthDate: string;
+    occupation: string;
+    city: string;
 }
 
 const UserEditCard: React.FC<EditProfileButtonProps> = (props) => {
-    
+
     function updateProfile(event: React.FormEvent) {
         event.preventDefault();
 
         //validation
-        
+
         props.toggle();
     }
 

@@ -43,8 +43,6 @@ const UserEditCard: React.FC<EditProfileButtonProps> = (props) => {
                 "relationship": relationshipRef.current!.value
               }),
         });
-
-        await console.log(response.json());
     }
 
     const occupationRef = useRef<HTMLInputElement>(null);

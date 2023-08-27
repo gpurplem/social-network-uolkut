@@ -83,6 +83,7 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
             country: countryRef.current?.value,
             city: cityRef.current?.value,
             relationship: relationshipRef.current?.value,
+            picture: '1.jpg',
         }
 
         const responseUser = await fetch('http://localhost:5000/users', {

@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <Navbar page='logged-out' name='' />
+      <Navbar page='logged-out' name='' picture='' />
 
       <div className='access-page__main-card'>
         <div className='access-page__image-wrapper'>

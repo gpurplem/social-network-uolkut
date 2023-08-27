@@ -24,6 +24,11 @@
       "id": 364758889,
       "email": "jose@mail.com",
       "password": "12345"
+    },
+    {
+      "id": 205104662,
+      "email": "ana@mail.com",
+      "password": "12345"
     }
   ],
   "users-data": [
@@ -34,7 +39,8 @@
       "occupation": "Jornalista",
       "country": "Brasil",
       "city": "São Paulo",
-      "relationship": "Divorciado"
+      "relationship": "Divorciado",
+      "picture": "1.jpg"
     },
     {
       "id": 366649407,
@@ -43,7 +49,8 @@
       "occupation": "Advogada",
       "country": "Brasil",
       "city": "São Paulo",
-      "relationship": "Namorando"
+      "relationship": "Namorando",
+      "picture": "1.jpg"
     },
     {
       "id": 211303362,
@@ -52,16 +59,18 @@
       "occupation": "Cabeleireira",
       "country": "Brasil",
       "city": "Campinas",
-      "relationship": "Namorando"
+      "relationship": "Namorando",
+      "picture": "1.jpg"
     },
     {
       "id": 966564470,
-      "name": "Tulla Luana",
-      "birthDate": "13/08/1970",
+      "name": "Tulla",
+      "birthDate": "13/09/1970",
       "occupation": "Famosa",
       "country": "Brasil",
       "city": "Guarujá",
-      "relationship": "Casado"
+      "relationship": "Casado",
+      "picture": "1.jpg"
     },
     {
       "id": 364758889,
@@ -70,7 +79,18 @@
       "occupation": "Câmera man",
       "country": "Brasil",
       "city": "Guarujá",
-      "relationship": "Casado"
+      "relationship": "Casado",
+      "picture": "1.jpg"
+    },
+    {
+      "id": 205104662,
+      "name": "Ana",
+      "birthDate": "10/10/1990",
+      "occupation": "Programadora",
+      "country": "Brasil",
+      "city": "Campinas",
+      "relationship": "Solteiro",
+      "picture": "1.jpg"
     }
   ]
 }

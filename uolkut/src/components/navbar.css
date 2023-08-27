@@ -75,6 +75,7 @@
 .navbar__user-profile img {
     height: 100%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .navbar__link--active {

@@ -1,16 +1,23 @@
 import './navbar.css'
 import mainLogo from '../assets/uolkut-logo.svg'
-import userImage from '../assets/profile-pic-user.jpg'
 import SearchBar from './search-bar'
 
 interface propsInterface {
     page: string;
-    name: string;
+    name: string;    
+    picture: string;
 }
 
 const Navbar: React.FC<propsInterface> = (props) => {
     let content;
     let navbarContentClass = 'navbar-content ';
+    let imagePath;
+
+    try {
+        imagePath = require('../assets/users-pictures/' + props.picture);
+    } catch (error) {
+        imagePath = require('../assets/users-pictures/1.jpg');
+    }
 
     if (props.page === 'logged-out') {
         navbarContentClass += 'navbar-content-loggedout';
@@ -40,7 +47,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
                 <div className="navbar-group__right">
                     <SearchBar parent='navbar' />
                     <div className="navbar__user-profile">
-                        <img src={userImage} alt="Usuário" />
+                        <img src={imagePath} alt="Usuário" />
                         <span className="navbar__user-name">{props.name}</span>
                         <i className="navbar__arrow-down"></i>
                     </div>

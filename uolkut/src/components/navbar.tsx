@@ -14,7 +14,7 @@ const Navbar: React.FC<propsInterface> = (props) => {
     let imagePath;
 
     try {
-        imagePath = require('../../assets/users-pictures/' + props.picture);
+        imagePath = require('../assets/users-pictures/' + props.picture);
     } catch (error) {
         imagePath = require('../assets/users-pictures/1.jpg');
     }

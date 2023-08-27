@@ -7,6 +7,7 @@ interface EditProfileButtonProps {
 }
 
 const EditProfileButton: React.FC<EditProfileButtonProps> = (props) => {
+
     function toggleEditing(event: React.FormEvent) {
         event.preventDefault();
         props.toggle();

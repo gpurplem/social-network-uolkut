@@ -6,6 +6,11 @@
 # Application details
 Social network application with registering, logging and profile editing functions.
 
+# Instructions for running
+- cd .\uolkut\
+- npx json-server --watch ./mockAPI/db.json --port 5000
+- npm start
+
 # Environment details
 - Windows 11
 - Chrome version 114.0.5735.199

@@ -4,6 +4,20 @@ import './accessFormCard.css'
 import { useNavigate } from 'react-router-dom';
 import { useScreenSize } from '../hooks/useScreenSize';
 import { useRef } from 'react';
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCC3z2H3Hj87yJUaz64CvI4fqNt06ZsuUA",
+    authDomain: "uolkut-cf752.firebaseapp.com",
+    projectId: "uolkut-cf752",
+    storageBucket: "uolkut-cf752.appspot.com",
+    messagingSenderId: "650625626131",
+    appId: "1:650625626131:web:eda0c55ab52f9a8c2dcfe6"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 interface propsInterface {
     form: string;
@@ -58,6 +72,12 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
             },
         });
 
+        signInWithEmailAndPassword(auth, user.email!, user.password!)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+            })
+
         const data = await response.json();
         await navigate('/profile/?u=' + data[0].id);
     }
@@ -101,6 +121,10 @@ const AccessFormCard: React.FC<propsInterface> = (props) => {
                 "Content-Type": "application/json",
             },
         });
+
+        const userEmail = await user.email;
+        const userPass = await user.password;
+        await createUserWithEmailAndPassword(auth, userEmail!, userPass!);
 
         if (responseUser.status === 201 && responseUserData.status === 201) {
             if (emailRef.current &&

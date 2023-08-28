@@ -29,6 +29,16 @@
       "id": 205104662,
       "email": "ana@mail.com",
       "password": "12345"
+    },
+    {
+      "id": 326099263,
+      "email": "luz@mail.com",
+      "password": "123456"
+    },
+    {
+      "id": 290509381,
+      "email": "robson@mail.com",
+      "password": "123456"
     }
   ],
   "users-data": [
@@ -91,6 +101,25 @@
       "city": "Campinas",
       "relationship": "Solteiro",
       "picture": "2.jpg"
+    },
+    {
+      "id": 326099263,
+      "name": "",
+      "birthDate": "",
+      "occupation": "",
+      "country": "",
+      "city": "",
+      "relationship": "",
+      "picture": "1.jpg"
+    },
+    {
+      "id": 290509381,
+      "name": "Robson",
+      "birthDate": "10/04/2000",
+      "occupation": "Mecânico",
+      "country": "Brasil",
+      "city": "Ribeirão Preto",
+      "relationship": "Casado"
     }
   ]
 }

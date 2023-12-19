@@ -1,4 +1,4 @@
-# Social Media Uolkut
+# Social Network Uolkut
 
 # Application details
 Social network application with registering, logging and profile editing functions.
